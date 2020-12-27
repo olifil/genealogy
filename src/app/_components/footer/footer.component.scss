@@ -1,0 +1,31 @@
+footer {
+    box-sizing: border-box;
+    position: relative;
+
+    padding: 200px 50px 150px;
+
+    &:before {
+        position: absolute;
+        top: 0; left: 0;
+
+        width: 100%; height: 72px;
+
+        content: '';
+
+        background: url(../../../assets/imgs/bg_cloud_top_2.png) no-repeat;
+    }
+}
+
+.title {
+    font-size: 1.3rem;
+    font-weight: bold;
+
+    border-bottom: 1px dotted silver;
+}
+
+.summary {
+    width: 50%;
+}
+.content {
+    flex-grow: 1;
+}

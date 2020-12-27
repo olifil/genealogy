@@ -1,0 +1,20 @@
+.page {
+    width: 100%;
+    background-color: white;
+}
+
+// Bouton d'accès au haut de page
+#toTop {
+    position: fixed;
+
+    bottom: 30px; right: 30px;
+
+    opacity: .5;
+
+    color: #7f7770;
+    
+    &:hover {
+        opacity: 1;
+        color: #7f7770;
+    }
+}

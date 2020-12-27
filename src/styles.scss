@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+
+$primary: #db9c4f;
+$secondary: #7f7770;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+html, body {
+    width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    letter-spacing: 1px;
+    background-color: #2e2e2e;
+}
+
+.card .card-body { 
+    font-size: 14px;
+}
+
+.helper {
+    border: 1px dotted red;
+}

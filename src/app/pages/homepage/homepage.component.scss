@@ -1,0 +1,165 @@
+$white: #fefefe;
+.intro {
+    height: 680px;
+
+    padding: 130px 0 0;
+
+    overflow: hidden;
+
+    background: url(../../../assets/imgs/bg_intro.jpg) no-repeat;
+    background-size: cover;
+
+
+    &:before {
+        position: absolute;
+        top: -100px; left: 0;
+        min-width: 100%;
+        height: 150px;
+        content: ' ';
+        background: url(../../../assets/imgs/bg_intro_top.png) top no-repeat;
+        background-size: cover;
+    }
+
+    &:after {
+        position: absolute;
+        bottom: -100px; left: 0;
+        min-width: 100%;
+        height: 150px;
+        content: ' ';
+        background: url(../../../assets/imgs/bg_intro_bottom.png) bottom no-repeat;
+        background-size: cover;
+    }
+
+    & h1 {
+        line-height: 80px;
+
+        
+        font-family: 'Open Sans', sans-serif;
+        font-weight: extra-bold;
+        font-size: 60px;
+        text-shadow: 5px -5px 20px #54524f;
+        color: #deb37e;
+    }
+
+    & .subtitle {
+        font-size: 22px;
+        
+        color: #54524f;
+    }
+    
+
+    & .text {
+        margin: 15px 0 0 -15px;
+
+        color: $white;
+        text-shadow: 1px 0px 2px #54524f;
+    }
+}
+
+.btn {
+    border-radius: 20px;
+}
+
+.card {
+    width: 25%;
+    
+    & .card-body {
+        color: $white;
+    }
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+}
+
+#obligations {
+    & .col-md-6 {
+        padding: 0;
+    }
+
+    & .content {
+        margin: 0 50px;
+
+    }
+}
+#recherches, #contact, #tarifs {
+    position: relative;
+
+    margin-top: 50px;
+    padding: 77px 0 150px;
+
+    background: rgba(  #7f7770, .5) url(../../../assets/imgs/bg_shadowed.png) center left no-repeat;
+    background-size: 30%;
+
+    &:before {
+        position: absolute;
+        top: 0;
+        width: 100%; height: 87px;
+
+        content: '';
+
+        background: url(../../../assets/imgs/bg_cloud_top.png) center left no-repeat;
+        background-size: cover;
+    }
+
+    &:after {
+        position: absolute;
+        bottom: 0;
+        width: 100%; height: 78px;
+
+        content: '';
+        background: url(../../../assets/imgs/bg_cloud_bottom.png) center left no-repeat;
+        background-size: cover;
+    }
+}
+
+#tarifs {
+    min-height: 600px;
+
+    background: url(../../../assets/imgs/bg_tarifs.jpg) top -200px left no-repeat;
+    background-size: cover;
+
+    & .title {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    & h2 {
+        padding-right: 125px;
+        text-align: right;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 5px rgba(#7f7770, .5);
+        color: #7f7770;
+        &:first-line {
+            color: #deb37e;
+        }
+    }
+}
+
+#contact {
+    margin-bottom: 100px;
+    padding: 200px 0;
+
+    background-image: none;
+    & .input-group {
+        width: 50%;
+
+        & input, & button {
+            border-radius: 18px;
+        }
+        & input {
+            width: 100%;
+        }
+        & button {
+            position: absolute;
+            right: -1px;
+            z-index: 500;
+        }
+    }
+}
+
+#prestations {
+    margin-bottom: 100px;
+}
